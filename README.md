@@ -20,3 +20,10 @@ It sets up various Azure resources, in particular an Azure storage account and a
 Any NetCDF file that is added to the storage account is processed by an Azure function and loaded into the database.
 
 For further details [look at the repository here](https://github.com/alan-turing-institute/IceNetETL).
+
+## IceNet GeoAPI
+
+This project is for the code that exposes predictions from the [IceNet ETL](https://github.com/alan-turing-institute/IceNetETL) database.
+It sets up various Azure resources, in particular a webserver that provides the API.
+
+For further details [look at the repository here](https://github.com/alan-turing-institute/IceNetGeoAPI).
