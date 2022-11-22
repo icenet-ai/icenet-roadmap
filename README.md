@@ -22,7 +22,7 @@ Resources TODO, please review individual repositories.
 
 Example notebooks showing how to use the library.
 
-#### [icenet-notebooks](https://github.com/icenet-ai/icenet-notebooks)
+#### [icenet](https://github.com/icenet-ai/icenet)
 
 The IceNet library, containing documentation sources. Probably easiest to start with the [icenet-notebooks](https://github.com/icenet-ai/icenet-notebooks) or [icenet-pipeline](https://github.com/icenet-ai/icenet-pipeline) repositories for guidance in the first instance.
 
@@ -30,13 +30,13 @@ The IceNet library, containing documentation sources. Probably easiest to start 
 
 A detailed explanation of the machine learning pipeline can be [found here](https://github.com/icenet-ai/icenet-project/wiki/Model-Pipeline). Fundamentally, there is a reusable and continuously executable pipeline from data ingestion through to forecast production and upload. 
 
-This high level diagram depicts the overall structure: 
+This high level diagram depicts the structuring of the pipeline:
 
-<img src="https://github.com/alan-turing-institute/IceNet-Project/wiki/Pipeline%20Layout.png" alt="IceNet ML Pipeline" /> 
+<img src="https://github.com/alan-turing-institute/IceNet-Project/wiki/Pipeline%20Layout.png" alt="IceNet ML Pipeline" />  
 
 The daily forecasting pipeline centers around a refactored version [of the original research model for monthly forecasts](https://github.com/tom-andersson/icenet-paper), located [in this library](https://www.github.com/icenet-ai/icenet). An example to using the library [can be found here](https://github.com/icenet-ai/icenet-pipeline) which leverage a BAS developed tool for running [model ensembles.](https://github.com/JimCircadian/model-ensembler) on HPCs.
 
-#### IceNet ETL
+#### [icenet-etl](https://github.com/icenet-ai/icenet-etl)
 
 This project is for the code that runs the extract, transform and load (ETL) stage of the pipeline.
 It sets up various Azure resources, in particular an Azure storage account and a PostgreSQL database.
@@ -44,7 +44,7 @@ Any NetCDF file that is added to the storage account is processed by an Azure fu
 
 For further details [look at the repository here](https://github.com/icenet-ai/icenet-etl).
 
-#### IceNet GeoAPI
+#### [icenet-geoapi](https://github.com/icenet-ai/icenet-geoapi)
 
 This project is for the code that exposes predictions from the [IceNet ETL](https://github.com/icenet-ai/icenet-etl) database. It sets up various Azure resources, in particular a webserver that provides the API.
 
